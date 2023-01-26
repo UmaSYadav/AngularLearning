@@ -9,6 +9,8 @@ import { BlogsComponent } from './components/blogs/blogs.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { ProductComponent } from './components/product/product.component';
 import { UsersModule } from './users/users.module';
+import { AdminRoutingModule } from './admin/admin-routing.module';
+import { EmployeeRoutingModule } from './employee/employee-routing.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { UsersModule } from './users/users.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    UsersModule
+    UsersModule,
+    AdminRoutingModule,
+    EmployeeRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

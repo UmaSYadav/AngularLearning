@@ -8,6 +8,7 @@ import { AboutComponent } from './components/about/about.component';
 import { BlogsComponent } from './components/blogs/blogs.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { ProductComponent } from './components/product/product.component';
+import { UsersModule } from './users/users.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProductComponent } from './components/product/product.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    UsersModule
   ],
   providers: [],
   bootstrap: [AppComponent]

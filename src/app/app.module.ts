@@ -11,6 +11,7 @@ import { ProductComponent } from './components/product/product.component';
 import { UsersModule } from './users/users.module';
 import { AdminRoutingModule } from './admin/admin-routing.module';
 import { EmployeeRoutingModule } from './employee/employee-routing.module';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { EmployeeRoutingModule } from './employee/employee-routing.module';
     AboutComponent,
     BlogsComponent,
     ContactsComponent,
-    ProductComponent
+    ProductComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

@@ -4,6 +4,7 @@ import { AboutComponent } from './components/about/about.component';
 import { BlogsComponent } from './components/blogs/blogs.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { HomeComponent } from './components/home/home.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { ProductComponent } from './components/product/product.component';
 
 const routes: Routes = [
@@ -11,7 +12,8 @@ const routes: Routes = [
     {path:'About', component:AboutComponent},
     {path:'Blogs', component:BlogsComponent},
     {path:'Contact', component:ContactsComponent},
-    {path:'Product/:name', component:ProductComponent}
+    {path:'Product/:name', component:ProductComponent},
+    //{path:'**', component:PageNotFoundComponent}//on this its overriding all other routings
 ];
 
 @NgModule({

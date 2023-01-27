@@ -12,6 +12,7 @@ import { UsersModule } from './users/users.module';
 import { AdminRoutingModule } from './admin/admin-routing.module';
 import { EmployeeRoutingModule } from './employee/employee-routing.module';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     AppRoutingModule,
     UsersModule,
     AdminRoutingModule,
-    EmployeeRoutingModule
+    EmployeeRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

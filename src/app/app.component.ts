@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from './api.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularRouting';
+  constructor(private api:ApiService) {
+    this.getData();
+  }
+  getData() {
+    this.api.getPostdata().subscribe(data=> {console.log(data)});
+  }
 }
+
